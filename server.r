@@ -21,4 +21,8 @@ shinyServer(function(input, output, session) {
       options=list(color='#4A9', fill=TRUE, wight=1)
     )
   })
+
+  output$accession_table = renderDataTable({
+    accessions
+  })
 })
